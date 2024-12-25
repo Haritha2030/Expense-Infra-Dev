@@ -7,8 +7,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "haritha-remote-state"
-    key    = "expense-vpc-dev"
+    bucket = "haritha-bucket"
+    key    = "expense-vpc"
     region = "us-east-1"
     dynamodb_table = "haritha-locking"
   }
